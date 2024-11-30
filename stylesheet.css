@@ -1,3 +1,10 @@
+body,
+#root {
+	width: 100%;
+	height: 100%;
+	margin: auto;
+	padding: auto;
+}
 body {
 	/*background-color: #f170a6;	*/
 	background-color: #000;
@@ -8,6 +15,7 @@ body {
 	transition:background-color linear 5s;
 	overflow-x:hidden;
 }
+
 .container {
 	display: none;
 }
@@ -1075,8 +1083,8 @@ audio {
 }
 
 .balloons {
-	position: fixed;
-	bottom: -200px;
+	position:fixed;
+	bottom:-200px;
 	opacity: 0.6;
 	z-index: 99;
 	width: 100px;
@@ -1260,14 +1268,14 @@ audio {
 
 .balloon-border{
 	position: fixed;
-	top:100%;
+	top:110%;
 	opacity: 0.5;
 	z-index: 9999;
 }
 .control-panel {
-	position: fixed;
+	position: flexble;
 	bottom: 0;
-	padding:10px 0px 10px 0px;
+	padding:10px 0px 122px 0px;
 }
 #play, #bannar_coming, #balloons_flying,#cake_fadein,#light_candle,#wish_message,#story {
 	display: none;
@@ -1281,8 +1289,7 @@ audio {
 	display: none;
 }
 @D:300px;
-/* ============================================== POSITION
-*/
+
 /*
 .cake{
   position:absolute;
@@ -1546,8 +1553,8 @@ p{
 
 
     /*controlling tablet width*/
-    @media only screen and (max-width: 720px){
-    .container {
-    		-webkit-transform: scale(0.9);
+    @media(max-width:400px{
+		.container{
+    		width:100%;
     	}
     }
